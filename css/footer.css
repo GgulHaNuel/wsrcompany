@@ -1,0 +1,244 @@
+@charset "UTF-8";
+
+/* FOOTER SETTING */
+#new_ft {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: block;
+}
+
+#new_ft .ft_area {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: #282828;
+    padding: 50px 0;
+}
+
+#new_ft .ft_con {
+    width: 100%;
+    max-width: 1280px;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+}
+
+@media all and (max-width: 1441px) {
+    #new_ft .ft_area {
+        padding: 50px 30px;
+    }
+}
+
+@media all and (max-width: 481px) {
+    #new_ft .ft_area {
+        padding: 30px 15px;
+    }
+}
+
+/* FOOTER SETTING END */
+
+/* FOOTER */
+.ft_top {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.ft_top .ft_info {
+    width: 520px;
+    height: auto;
+    position: relative;
+}
+
+.ft_top .ft_info .ft_logo {
+    width: 180px;
+    height: 60px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.ft_top .ft_info>p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #ddd;
+    letter-spacing: -.5px;
+    line-height: 25px;
+}
+
+.ft_top .ft_cont {
+    width: auto;
+    height: auto;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 30px;
+}
+
+.ft_top .ft_cont .ft_cont_item {
+    width: auto;
+    height: auto;
+    position: relative;
+    margin-right: 40px;
+}
+
+.ft_top .ft_cont .ft_cont_item.mo_cont {
+    display: none;
+}
+
+.ft_top .ft_cont .ft_cont_item>h2 {
+    font-size: 1.0625rem;
+    font-weight: 500;
+    color: #2a8ce0;
+    letter-spacing: -1px;
+    margin-bottom: 15px;
+}
+
+.ft_top .ft_cont .ft_cont_item>p,
+.ft_top .ft_cont .ft_cont_item>p>a {
+    font-size: 1rem;
+    color: #ddd;
+    line-height: 23px;
+    letter-spacing: -.5px;
+}
+
+.ft_nav {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.ft_nav .ft_nav_box {
+    width: auto;
+    height: auto;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.ft_nav .ft_nav_box>li {
+    width: auto;
+    height: auto;
+    position: relative;
+    margin-right: 30px;
+}
+
+.ft_nav .ft_nav_box>li:last-of-type {
+    margin-right: 0;
+}
+
+.ft_nav .ft_nav_box>li>a {
+    font-size: 1rem;
+    color: #ddd;
+    font-weight: 400;
+}
+
+.ft_nav>p {
+    font-size: 1rem;
+    color: #ddd;
+    letter-spacing: -.5px;
+}
+
+@media all and (max-width: 1025px) {
+    .ft_top {
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .ft_top .ft_info {
+        width: 100%;
+    }
+
+    .ft_top .ft_info>p>br {
+        display: none;
+    }
+
+    .ft_top .ft_cont {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 885px) {
+    .ft_nav .ft_nav_box {
+        display: none;
+    }
+}
+
+@media all and (max-width: 621px) {
+    .ft_top .ft_cont .ft_cont_item:nth-of-type(1) {
+        display: none;
+    }
+}
+
+@media all and (max-width: 481px) {
+    .ft_top .ft_info .ft_logo {
+        width: 130px;
+        height: 40px;
+        margin-bottom: 0;
+    }
+
+    .ft_top .ft_info>p {
+        display: none;
+    }
+
+    .ft_top .ft_cont {
+        padding-top: 15px;
+    }
+
+    .ft_top .ft_cont .ft_cont_item {
+        display: none;
+    }
+
+    .ft_top .ft_cont .ft_cont_item.mo_cont {
+        display: block;
+    }
+
+    .ft_top .ft_cont .ft_cont_item>h2 {
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+
+    .ft_top .ft_cont .ft_cont_item>p,
+    .ft_top .ft_cont .ft_cont_item>p>a {
+        font-size: 0.875rem;
+    }
+
+    .ft_nav>p {
+        font-size: 0.875rem;
+    }
+}
+
+/* FOOTER END */
